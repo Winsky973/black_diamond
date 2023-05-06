@@ -789,5 +789,15 @@ p {
     opacity: 1;
   }
 }
+.createur__container {
+  color: #F8F8F8;
+}
+
+.image__container {
+  color: #F8F8F8;
+}
+.image__container .grid-container .grid-item {
+  margin-top: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */

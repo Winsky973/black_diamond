@@ -1,0 +1,14 @@
+.createur__container{
+    color: $color-white;
+}
+
+.image__container{
+    color: $color-white;
+
+    & .grid-container{
+        & .grid-item{
+            margin-top: 1rem;
+        }
+    }
+}
+
