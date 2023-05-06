@@ -1,0 +1,78 @@
+// La partie du header du site 
+
+.header {
+    height: 100vh;
+    background-image: url("../../public/images/restaurants/Rectangle.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    &--no-bg-image {
+        background-image: none;
+    }
+
+    &--small {
+        background-image: url("../../public/images/restaurants/Rectangle.svg");
+        height: 50vh;
+
+        &__text {
+            text-align: center;
+        }
+    }
+
+    &__accroche {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: white;
+
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include desktopxl-only {
+            width: 40%;
+        }
+
+        @include desktop-only {
+            width: 40%;
+        }
+
+
+        &__titre__container {
+            margin: 1.5rem 0;
+        }
+    }
+
+    &__accroche h2 {
+        color: $color-primary;
+    }
+
+    &__accroche h2 span {
+        color: $color-white;
+    }
+
+
+    &__heading {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 1rem;
+        margin-top: 2rem;
+
+        & h1 a {
+            color: $color-white;
+
+            & span {
+                color: $color-secondary;
+                position: relative;
+            }
+        }
+    }
+}

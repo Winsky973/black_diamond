@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "bitter_rose";
+    src: url("/fonts/bitter_rose/Font/Bitter_Rose.ttf");
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url("/fonts/Chillax_Complete/Chillax_Complete/Fonts/Variable/Chillax-Variable.ttf");
+}
+
+body {
+    font-family: 'Chillax', sans-serif;
+    font-weight: 400;
+    font-size: 1.02rem;
+    line-height: 160%;
+}
+
+h1 {
+    font-family: 'Chillax', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+input, select {
+    font-family: 'Chillax', sans-serif;
+    font-weight: 400;
+    font-size: 1.02rem;
+    line-height: 160%;
+}
+
+span{
+    font-family: 'Chillax', sans-serif;
+    font-size: 2rem;
+}
+
+.heading__menu {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 3.6em;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+h4 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+i {
+    font-size: 1.35rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}

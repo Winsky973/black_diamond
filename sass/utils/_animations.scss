@@ -1,0 +1,126 @@
+@mixin check-slide-droit {
+    position: absolute;
+    width: 5rem;
+    height: 10rem;
+    right: 0rem;
+    bottom: 0rem;
+    transform: translateX(100%);
+    transition: transform .5s;
+    background-color: $color-tertiary;
+    z-index: 0;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        border-radius: 50rem;
+        background-color: white;
+        z-index: 1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0 .3rem .3rem 0;
+        border-color: $color-tertiary;
+        transition: transform .4s ease-in-out;
+        width: .7rem;
+        z-index: 1;
+        height: 1.1rem;
+        right: 2.1rem;
+        bottom: 2rem;
+    }
+}
+
+@mixin loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #9356DC;
+    opacity: 0;
+    animation: bg-scale 3s linear;
+    & div {
+        position: relative;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        min-height: 0%;
+        min-width: none;
+        width: 10rem;
+         ::before {
+            content: '';
+        }
+        &--poele {
+            transform: perspective(150px);
+            animation: lancer 1.3s ease-out 4 .2s;
+        }
+        &--oeuf {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            width: 5.5rem;
+            transform: perspective(150px);
+            animation: saut 1.4s ease-in-out 4 .1s;
+        }
+    }
+    & .loading {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        border: solid .3rem $color-tertiary;
+        animation: square-rotate 5s linear;
+    }
+    @keyframes lancer {
+        0% {
+            transform: perspective(150px) rotateY(30deg);
+        }
+        25% {
+            transform: perspective(200px) rotateY(0deg) translateX(.5rem);
+        }
+        50% {
+            transform: perspective(200px) rotateY(0deg);
+        }
+        100% {
+            transform: perspective(150px) rotateY(30deg);
+        }
+    }
+    @keyframes saut {
+        0% {
+            transform: scale(.9) rotateY(30deg);
+        }
+        50% {
+            transform: scale(1.4) rotateY(360deg);
+        }
+        100% {
+            transform: perspective(150px) rotateY(30deg);
+        }
+    }
+}
+
+@keyframes bg-scale {
+    0% {
+        z-index: 999;
+        opacity: .99;
+    }
+    50% {
+        opacity: .9;
+    }
+    80% {
+        opacity: .9;
+    }
+    100% {
+        z-index: 999;
+    }
+}

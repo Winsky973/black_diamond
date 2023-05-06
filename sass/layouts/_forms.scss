@@ -1,0 +1,43 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+
+    & label, button{
+        margin-top: 1.5rem;
+    }
+
+    & select{
+        width: 100%;
+        appearance: none;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+    }
+
+    &__header{
+        margin-bottom: 1rem;
+    }
+}
+
+.form-input{
+    min-height: 3.7rem;
+    padding: .5rem 1rem;
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 11px;
+    background-color: $color-black;
+    outline: none;
+    color: $color-white;
+    margin-top: .3rem;
+
+    &::placeholder{
+        color: darken($color-white, 30);
+    }
+
+    &:focus{
+       border-color: $color-primary;
+    }
+}
+

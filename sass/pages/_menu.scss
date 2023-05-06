@@ -1,0 +1,140 @@
+.menus {
+    @include desktop-only {
+        display: block;
+        margin-top: -5rem;
+        width: 100%;
+    }
+    @include desktopxl-only {
+        display: block;
+        margin-top: -5rem;
+        width: 100%;
+    }
+}
+
+.header {
+    &__heading {
+        &--menus {
+            align-items: center;
+            align-items: center;
+            width: 60%;
+            justify-content: space-between;
+        }
+        & a {
+            align-self: flex-start;
+        }
+    }
+    &__informations--fix {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+    }
+    &__informations .image {
+        width: 100%;
+        height: 18rem;
+        @include desktop-only {
+            height: 30rem;
+        }
+        @include desktopxl-only {
+            height: 30rem;
+        }
+        & img {
+            @include desktop-only {
+                border-radius: 0 0 30rem 30rem;
+            }
+            @include desktopxl-only {
+                border-radius: 0 0 30rem 30rem;
+            }
+        }
+    }
+}
+
+.menus {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        & h1 {
+            justify-content: flex-start;
+        }
+    }
+    &__grid {
+        margin-top: 3rem;
+        &__heading {
+            & p {
+                @include border-decoration;
+            }
+        }
+        &__card {
+            animation: trans 2s ease-out;
+            position: relative;
+            overflow: hidden;
+            & span {
+                @include check-slide-droit;
+            }
+            &:hover>span {
+                transform: translateX(0%);
+            }
+            &:hover>span::after {
+                transform: rotate(400deg);
+            }
+            &:hover>.informations {
+                width: 88%;
+                @include mobile-only {
+                    width: 75%;
+                }
+                @include tablette-only {
+                    width: 90%;
+                }
+                @include desktopxl-only {
+                    width: 85%;
+                }
+                @include desktopxl-only(1600px) {
+                    width: 90%;
+                }
+            }
+            &-1 {
+                animation-duration: 1s;
+            }
+            &-2 {
+                animation-duration: 1.5s;
+            }
+            &-3 {
+                animation-duration: 2s;
+            }
+        }
+        &__prix {
+            width: 100%;
+            display: flex;
+            white-space: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            & {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            & p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: .8em;
+                padding: .5rem 0;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@keyframes trans {
+    0% {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 20px;
+  }
+  
+  .grid-item {
+    width: 100%;
+    height: 60vh;
+    // border: .1rem solid black;
+  }

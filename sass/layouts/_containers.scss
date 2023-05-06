@@ -1,0 +1,80 @@
+.main-container {
+    @include desktop-only {
+        display: flex;
+    }
+
+    &--menus {
+        @include desktop-only {
+            margin-top: 0;
+            transition: all 2s ease-out;
+        }
+    }
+}
+
+.container__btn {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.box {
+    width: 90%;
+    margin: auto;
+
+    &--navigation{
+        width: 80%;
+        @include desktopxl-only{
+            width: 50%;
+        }
+    }
+
+    @include desktop-only {
+        width: 40%;
+    }
+
+    @include tablette-only{
+        width: 60%;
+    }
+
+    @include desktopxl-only{
+        width: 50%;
+    }
+
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    color: white;
+    transition: background-color .1s ease-in-out;
+    margin-bottom: 2rem;
+
+    &:hover {
+        background-color: lighten($color-primary, 15%);
+        border-radius: 1rem;
+    }
+
+    &__texte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__prix {
+        display: flex;
+        align-items: center;
+
+        & p {
+            font-weight: 500;
+        }
+    }
+
+    &__image {
+        width: 25%;
+
+        & img {
+            border-radius: 1rem;
+        }
+    }
+}

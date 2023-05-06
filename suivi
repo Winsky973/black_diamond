@@ -1,0 +1,27 @@
+navigation
+-- mobile
+-- -- humberger menu
+-- -- animation
+-- -- Localisation
+-- -- -- Revoyer a l'appli map
+-- -- Horaires ouvertures
+-- -- Reservation
+-- -- -- Ouvrir l'application telephone
+
+pages
+-- Acceuil
+-- Menus
+-- 404
+-- photos
+-- a propos
+-- -- Histoire du restaurant
+-- -- Images de la construction
+-- contact
+-- -- Envoie de mail
+-- -- Nom prénom, tél, email, message, Envoyer
+-- partie dansante
+-- -- vidéo de l'entrée du club
+-- -- Images des sièges
+-- -- Image parti dj
+-- -- 
+

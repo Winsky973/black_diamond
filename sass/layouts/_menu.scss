@@ -1,0 +1,31 @@
+.main__menu__navigation ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    & li a {
+        color: $color-white;
+        font-weight: 500;
+    }
+}
+
+.menu__container {
+    color: $color-white;
+
+    @include tablette-only {
+        & .card:nth-of-type(1) {
+            margin-top: 1rem;
+        }
+    }
+
+    @include desktop-only {
+        & .card:nth-of-type(1) {
+            margin-top: .5rem;
+        }
+    }
+
+    & h2 {
+        font-size: 2rem;
+        font-weight: normal;
+    }
+}

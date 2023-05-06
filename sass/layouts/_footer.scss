@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    color: white;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        color: $color-white;
+    }
+
+    &__social {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & li {
+            margin-top: .5rem;
+        }
+
+        & li a {
+            color: $color-white;
+        }
+    }
+}
