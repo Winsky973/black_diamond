@@ -225,6 +225,22 @@ p {
 .navigation__adresse__container p {
   margin: 0.6rem 0;
 }
+.navigation__horaire__container {
+  display: none;
+  background-color: #F8F8F8;
+  padding: 1rem;
+  left: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  border-radius: 15px;
+}
+.navigation__horaire__container h4 {
+  margin-bottom: 0.7rem;
+}
+.navigation__horaire__container p {
+  margin: 0.3rem 0;
+  font-weight: 400;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1443px) {
   .main-container {
