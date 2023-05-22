@@ -28,15 +28,19 @@
 
 <body>
     <!-- premier entête  -->
-    <header class="header header--small">
-        <div class="header__heading">
+    <header class="header header--no-bg-image">
+        <div class="header__heading header__heading--fixed-top">
             <h1 class="header_title"><a href="/">Oblack Diamond</a></h1>
         </div>
 
-        <div class="header__accroche">
+        <video id="video-club" class="video__club" autoplay muted loop>
+            <source src="./public/videos/Vidéo.mp4">
+        </video>
+
+        <!-- <div class="header__accroche">
             <h2>Voyez</h2>
             <p>Notre menu</p>
-        </div>
+        </div> -->
 
         <nav id="navigation" class="box navigation">
             <svg id="menu-toggle" class="icon" width="27" height="30" viewBox="0 0 27 30" fill="none"
